@@ -8,7 +8,7 @@
     <th style="width: 10%"></th>
   </tr>
   </thead>
-  <tbody *ngIf="consumers">
+  <tbody *ngIf="consumers" style="text-align: -webkit-center">
   <tr *ngFor="let consumer of consumers | consumerSort">
     <td class="mdl-data-table__cell--non-numeric" style="width: 10%" [ngClass]="{statusBad: consumer.status.status == 'ERR'}">{{ consumer?.status?.status }}</td>
     <td class="mdl-data-table__cell--non-numeric" style="width: 60%">{{ consumer?.status?.group }}</td>
