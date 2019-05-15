@@ -22,7 +22,7 @@
           <th class="mdl-data-table__cell--non-numeric">Recorded</th>
         </tr>
       </thead>
-      <tbody *ngIf="consumer">
+      <tbody *ngIf="consumer" style="text-align: -webkit-center">
         <tr *ngFor='let partition of consumer.status.partitions | partitionFilter:pipeString'>
           <td></td>
           <td class="mdl-data-table__cell--non-numeric">{{ partition?.status }}</td>
